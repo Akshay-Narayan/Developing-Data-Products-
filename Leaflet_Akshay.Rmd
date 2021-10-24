@@ -1,0 +1,24 @@
+---
+title: "My_Leaflet"
+author: "Aryan Narayan"
+date: "10/24/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+My first leaflet which will be on rpubs
+
+```{r cars}
+library(leaflet)
+map_of_place <- leaflet() %>%
+  addTiles() %>%
+addMarkers(lat=13.345734, lng=74.797073, popup = "Current Address")
+
+map_of_place
+```
+
